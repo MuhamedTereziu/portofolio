@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('assets/background.jpg')   center/cover;
+}
+
+.highlight {
+  color: #00ffae;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.socials img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+#intro button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00ffae;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#about a {
+  color: #00ffae;
+  text-decoration: none;
+}
+
+/* Skills Section */
+#tools {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tools-boxes span {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px;
+  background: #222222;
+  color: #00ffae;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.project {
+  margin: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project img {
+  border-radius: 10px;
+}
+.project a {
+  color: #00ffae;
+  text-decoration: none;
+}
+
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input, #contact textarea {
+  width: 50%;
+  margin: auto auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  margin: auto auto;
+  background-color: #00ffae;
+  color: #111;
+  border: none;
+  border-radius: 3px;
+}
+footer {
+  padding: auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background: #111111;
+}
