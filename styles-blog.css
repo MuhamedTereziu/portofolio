@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+#intro {
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 20px;
+    background: url('assets/blog-back.jpg') center/cover;
+}
+.blog-post1 h2,
+.blog-post2 h2,
+.blog-post3 h2 {
+    padding: 100px;
+}
+.blog-post1 {
+    margin: 20px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-post2 {
+    margin: 20px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.blog-post3 {
+    margin: 20px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+footer {
+    padding: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: #111111;
+  }
