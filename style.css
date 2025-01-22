@@ -9,7 +9,6 @@ body {
   padding: 0;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +20,9 @@ nav a {
   margin: 0 15px;
   color: #fff;
   text-decoration: none;
+}
+nav a:hover {
+  color: #00ffae;
 }
 
 #intro {
