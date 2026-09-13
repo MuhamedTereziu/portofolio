@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamed Tereziu | IT Technician</title>
+  <meta name="description" content="Personal website of Muhamed Tereziu — Experienced IT Technician offering Smart Home Solutions, Small Business IT, Software Installation & Maintenance, and IT Hardware Repair Services." />
+  <link rel="icon" type="image/png" href="assets/logo_diamond_only.png" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..900;1,9..40,400..900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="logo">
+      <img src="assets/logo_diamond_only.png" alt="Muhamed Tereziu Logo" class="nav-logo-img" />
+      <span class="logo-name">MUHAMED TEREZIU</span>
+      <span class="logo-badge">IT Technician</span>
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What I Offer</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer" class="social-mini" title="LinkedIn Profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer" class="social-mini" title="GitHub Profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+      <a href="#contact" class="nav-cta">
+        Get in touch
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="7" y1="17" x2="17" y2="7" />
+          <polyline points="7 7 17 7 17 17" />
+        </svg>
+      </a>
+      <!-- Mobile Menu Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="m-bar m-bar-1"></span>
+        <span class="m-bar m-bar-2"></span>
+        <span class="m-bar m-bar-3"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="m-link">Home</a></li>
+        <li><a href="#about" class="m-link">About</a></li>
+        <li><a href="#services" class="m-link">What I Offer</a></li>
+        <li><a href="#experience" class="m-link">Experience</a></li>
+        <li><a href="#skills" class="m-link">Skills</a></li>
+        <li><a href="#contact" class="m-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="mobile-menu-cta m-link">
+          <span>Get in touch</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="mobile-menu-socials">
+          <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="m-dot">·</span>
+          <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <h1 class="small-team" id="smallTeam">
+      <span class="word"><span>Muhamed</span></span>&nbsp;<span class="word"><span>Tereziu</span></span>
+    </h1>
+
+    <div class="big-results-wrap">
+      <div class="big-results" id="bigResults">
+        <span class="letter">i</span><span class="letter">t</span><span class="letter">&nbsp;</span><span class="letter">t</span><span class="letter">e</span><span class="letter">c</span><span class="letter">h</span><span class="letter">n</span><span class="letter">i</span><span class="letter">c</span><span class="letter">i</span><span class="letter">a</span><span class="letter">n</span>
+      </div>
+    </div>
+
+    <!-- 8 Interactive 3D Floating Cards -->
+    <div class="cards-row" id="cardsRow">
+      <!-- Card 1: Muhamed Profile -->
+      <div class="card card-1" data-rot="-9" data-depth="14" data-card-id="modal-epoka">
+        <img src="assets/technician_card.jpg" alt="Muhamed Tereziu - IT Technician" />
+        <div class="card-caption">Muhamed Tereziu</div>
+      </div>
+      <!-- Card 2: Smart Home Solutions -->
+      <div class="card card-2" data-rot="-5" data-depth="10" data-card-id="modal-smarthome">
+        <img src="assets/card_smarthome.jpg" alt="Smart Home Solutions" />
+        <div class="card-caption">Smart Home Solutions</div>
+      </div>
+      <!-- Card 3: Small Business IT Solutions -->
+      <div class="card card-3" data-rot="-2" data-depth="8" data-card-id="modal-smallbiz">
+        <img src="assets/card_smallbiz.jpg" alt="Small Business IT Solutions" />
+        <div class="card-caption">Small Business IT</div>
+      </div>
+      <!-- Card 4: Software Installation & Maintaining -->
+      <div class="card card-4" data-rot="3" data-depth="12" data-card-id="modal-software">
+        <img src="assets/card_software.jpg" alt="Software Installation & Maintaining" />
+        <div class="card-caption">Software Maintenance</div>
+      </div>
+      <!-- Card 5: IT Repair Services & Maintaining -->
+      <div class="card card-5" data-rot="0" data-depth="6" data-card-id="modal-repair">
+        <img src="assets/card_repair.jpg" alt="IT Repair Services & Hardware Maintenance" />
+        <div class="card-caption">IT Repair & Hardware</div>
+      </div>
+      <!-- Card 6: Atom Computers Experience -->
+      <div class="card card-6" data-rot="4" data-depth="11" data-card-id="modal-atom">
+        <img src="assets/card_atom.jpg" alt="Atom Computers IT Technician Experience" />
+        <div class="card-caption">Atom Computers</div>
+      </div>
+      <!-- Card 7: Titan Albania Experience -->
+      <div class="card card-7" data-rot="7" data-depth="9" data-card-id="modal-titan">
+        <img src="assets/card_titan.jpg" alt="Titan Albania IT Help Desk" />
+        <div class="card-caption">Titan Albania</div>
+      </div>
+      <!-- Card 8: PC Assembly & Custom Builds -->
+      <div class="card card-8" data-rot="-4" data-depth="13" data-card-id="modal-assembly">
+        <img src="assets/card_pcbuild.jpg" alt="Custom PC Assembly & Network Systems" />
+        <div class="card-caption">PC Assembly & Builds</div>
+      </div>
+    </div>
+
+    <!-- Mobile Swipe Indicator (Visible only on mobile) -->
+    <div class="mobile-swipe-indicator">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>Swipe cards · Tap to view details</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+
+    <!-- Subline CTA -->
+    <div class="subline" id="subline">
+      <a href="#services" class="arrow-pill">
+        What I Offer &amp; Services
+        <span class="ar">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about-section" id="about">
+    <div class="about-card">
+      <div class="about-visual">
+        <div class="about-avatar-wrap">
+          <img src="assets/technician_avatar.jpg" alt="Muhamed Tereziu - IT Technician" class="about-avatar" />
+          <div class="about-badge">
+            <span class="live-dot"></span>
+            <span>Tirana, Albania</span>
+          </div>
+        </div>
+        <div class="quick-terminal">
+          <div class="terminal-bar">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-title">bash — muhamed@it-tech</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="t-out">Muhamed Tereziu (Medi)</p>
+            <p><span class="prompt">$</span> title</p>
+            <p class="t-out">Information Technology Technician</p>
+            <p><span class="prompt">$</span> current_role</p>
+            <p class="t-out">IT Help Desk @ Titan Albania</p>
+            <p><span class="prompt">$</span> previous_experience</p>
+            <p class="t-out">IT Technician @ Atom Computers (1 yr 9 mos)</p>
+            <p><span class="prompt">$</span> core_services</p>
+            <p class="t-out">Smart Home · Small Biz IT · Software &amp; Repairs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="eyebrow">ABOUT ME</div>
+        <h2>Hands-On <em>IT Support</em>, Infrastructure &amp; Smart Tech.</h2>
+        <p class="lead">
+          Hi! I'm Muhamed Tereziu, an experienced IT Technician based in Tirana, Albania. I provide dependable, end-to-end IT services for homeowners, professionals, and small businesses.
+        </p>
+        <p>
+          My background combines corporate enterprise IT at <strong>Titan Albania</strong> (managing end-user support, organizational networks, hardware fleets, CCTV/access controls, and Microsoft Power Platform automation) with 1 year and 9 months at <strong>Atom Computers</strong>, where I worked as both an <strong>IT Technician</strong> and <strong>IT Support Technician</strong> handling Windows/Linux servers, Docker containerization, NAS deployments, PC assembly, and B2B/B2C troubleshooting.
+        </p>
+        <p>
+          Whether you need a complete <strong>Smart Home automation</strong> setup, reliable <strong>Small Business IT solutions</strong>, seamless <strong>Software Installation &amp; Maintenance</strong>, or urgent <strong>Hardware Repairs</strong>, I bring proven field experience and meticulous attention to detail.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="h-icon">🏡</div>
+            <div class="h-info">
+              <h4>Smart Home Solutions</h4>
+              <span>Home automation, IoT integration, cameras &amp; secure networks</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="h-icon">💼</div>
+            <div class="h-info">
+              <h4>Small Business IT</h4>
+              <span>Office networks, NAS storage, backups &amp; workstation fleets</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="h-icon">🔧</div>
+            <div class="h-info">
+              <h4>Repairs &amp; Maintenance</h4>
+              <span>PC/laptop repairs, component upgrades, OS &amp; software care</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cta-row">
+          <a href="#services" class="btn-primary">
+            Explore What I Offer
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Request IT Support
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: WHAT I OFFER (SERVICES & SOLUTIONS) ============ -->
+  <section class="team-section" id="services">
+    <div class="team-head">
+      <div>
+        <div class="eyebrow">WHAT I OFFER</div>
+        <h2>Professional Services<br />&amp; <em>Proven Experience</em>.</h2>
+      </div>
+      <p>Click on any card below to see detailed capabilities, practical examples, and previous field deployments.</p>
+    </div>
+
+    <div class="team-grid" id="teamGrid">
+      <!-- Service 1 -->
+      <div class="t-card" data-modal="modal-smarthome">
+        <img src="assets/card_smarthome.jpg" alt="Smart Home Solutions" />
+        <div class="t-meta">
+          <div class="t-tag">Core Service</div>
+          <div class="nm">Smart Home Solutions</div>
+          <div class="rl">Home Automation · IoT Hubs · Smart Security &amp; Lighting</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="t-card" data-modal="modal-smallbiz">
+        <img src="assets/card_smallbiz.jpg" alt="Small Business IT Solutions" />
+        <div class="t-meta">
+          <div class="t-tag">Core Service</div>
+          <div class="nm">Small Business IT Solutions</div>
+          <div class="rl">Office Networks · Workstations · Backups &amp; NAS</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="t-card" data-modal="modal-software">
+        <img src="assets/card_software.jpg" alt="Software Installation and Maintaining" />
+        <div class="t-meta">
+          <div class="t-tag">Core Service</div>
+          <div class="nm">Software Installation &amp; Maintaining</div>
+          <div class="rl">Windows &amp; Linux OS · App Deployment · Patch Updates</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="t-card" data-modal="modal-repair">
+        <img src="assets/card_repair.jpg" alt="IT Repair Services and Maintaining" />
+        <div class="t-meta">
+          <div class="t-tag">Core Service</div>
+          <div class="nm">IT Repair &amp; Hardware Servicing</div>
+          <div class="rl">Diagnostics · Component Upgrades · Cleaning &amp; Recovery</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Experience 1: Titan Albania -->
+      <div class="t-card" data-modal="modal-titan">
+        <img src="assets/card_titan.jpg" alt="Titan Albania IT Help Desk" />
+        <div class="t-meta">
+          <div class="t-tag">Current Experience</div>
+          <div class="nm">Titan Albania — IT Help Desk</div>
+          <div class="rl">Infrastructure Support · CCTV · Power Platform Automation</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Experience 2: Atom Computers -->
+      <div class="t-card" data-modal="modal-atom">
+        <img src="assets/card_atom.jpg" alt="Atom Computers IT Technician" />
+        <div class="t-meta">
+          <div class="t-tag">Experience · 1 yr 9 mos</div>
+          <div class="nm">Atom Computers — IT Technician</div>
+          <div class="rl">Windows &amp; Linux Servers · Docker · NAS · PC Assembly</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Service / Capability: Custom PC Assembly & Builds -->
+      <div class="t-card" data-modal="modal-assembly">
+        <img src="assets/card_pcbuild.jpg" alt="Custom PC Assembly & Builds" />
+        <div class="t-meta">
+          <div class="t-tag">Specialized Service</div>
+          <div class="nm">Custom PC Assembly &amp; Builds</div>
+          <div class="rl">Tailored Hardware · Component Selection · Stress Testing</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+
+      <!-- Service / Skill: Network Setup & Security -->
+      <div class="t-card" data-modal="modal-network">
+        <img src="assets/card_network.jpg" alt="Network Installation & Security" />
+        <div class="t-meta">
+          <div class="t-tag">Core Service</div>
+          <div class="nm">Network Setup &amp; Security</div>
+          <div class="rl">High-Speed Wi-Fi · Routers · Switches · Firewalls · VPN</div>
+          <div class="t-hint">Click to see details ↗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: DETAILED SERVICES BREAKDOWN ============ -->
+  <section class="services-breakdown" id="services-details">
+    <div class="breakdown-head">
+      <div class="eyebrow">DETAILED BREAKDOWN</div>
+      <h2>How I Can <em>Help You</em> or Your Business.</h2>
+    </div>
+
+    <div class="breakdown-grid">
+      <!-- Box 1 -->
+      <div class="breakdown-card">
+        <div class="b-num">01</div>
+        <h3>Smart Home Solutions</h3>
+        <p>Turn your living space into an intelligent, effortless environment with interconnected smart devices and robust home connectivity.</p>
+        <ul class="service-checklist">
+          <li>Home Assistant, Apple Home &amp; Google Home hub integrations</li>
+          <li>Automated smart lighting, climate thermostats, and motorized shades</li>
+          <li>CCTV security cameras, smart video doorbells, and intrusion sensors</li>
+          <li>Dedicated isolated Wi-Fi &amp; VLAN subnets for secure, unthrottled IoT gadgets</li>
+        </ul>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="breakdown-card">
+        <div class="b-num">02</div>
+        <h3>Small Business IT Solutions</h3>
+        <p>Complete business technology foundations engineered to eliminate operational downtime and protect critical data.</p>
+        <ul class="service-checklist">
+          <li>Complete office network architecture, router, switch &amp; rack deployment</li>
+          <li>Commercial multi-access-point Wi-Fi coverage across all office rooms</li>
+          <li>Centralized data storage (NAS) and automated cloud/local backup routines</li>
+          <li>Workstation fleet rollout, printer/scanner sharing, and guest networks</li>
+        </ul>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="breakdown-card">
+        <div class="b-num">03</div>
+        <h3>Software Installation &amp; Maintaining</h3>
+        <p>Clean, certified installations and scheduled software upkeep to keep your operations agile, fast, and virus-free.</p>
+        <ul class="service-checklist">
+          <li>Operating system installations &amp; clean re-installs (Windows 10/11 &amp; Linux)</li>
+          <li>Productivity suite, antivirus, accounting software, and endpoint tools</li>
+          <li>Routine software updating, patch management, and driver optimization</li>
+          <li>Remote technical assistance, fast troubleshooting, and malware disinfection</li>
+        </ul>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="breakdown-card">
+        <div class="b-num">04</div>
+        <h3>IT Repair Services &amp; Maintaining</h3>
+        <p>Expert hardware diagnostics, PC assembly, and precision repairs to revive slow or malfunctioning machines.</p>
+        <ul class="service-checklist">
+          <li>Desktop PC, laptop, and server hardware diagnosis &amp; troubleshooting</li>
+          <li>Custom PC assembly and component configuration for specific workloads</li>
+          <li>High-speed NVMe/SATA SSD and RAM memory expansions</li>
+          <li>Deep dust cleaning, thermal paste replacement &amp; cooling fixes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: EXPERIENCE ============ -->
+  <section class="experience-section" id="experience">
+    <div class="experience-inner">
+      <div class="eyebrow">VERIFIED LINKEDIN EXPERIENCE</div>
+      <h2>Professional <em>Experience</em> &amp; Career History.</h2>
+      <p class="section-sub">Demonstrated track record across corporate enterprise IT, IT repair businesses, and hands-on system deployments.</p>
+
+      <div class="timeline">
+        <!-- Titan Albania -->
+        <div class="timeline-item">
+          <div class="timeline-badge">MAR 2026 — PRESENT</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Information Technology Help Desk</h3>
+                <span class="company-tag">Titan Albania · Full-time · On-site (Tirana, Albania)</span>
+              </div>
+            </div>
+            <p>
+              Delivering end-user IT support and managing/supporting organizational infrastructure, networks, and hardware. Responsibilities include employee onboarding/offboarding, asset management, physical security (CCTV/access control systems), and GDPR compliance, alongside driving process automation via the Microsoft Power Platform.
+            </p>
+            <div class="pill-group">
+              <span class="tech-pill highlight">Windows Server</span>
+              <span class="tech-pill highlight">Enterprise IT Infrastructure</span>
+              <span class="tech-pill">CCTV &amp; Access Controls</span>
+              <span class="tech-pill">Microsoft Power Platform</span>
+              <span class="tech-pill">Asset Management</span>
+              <span class="tech-pill">GDPR Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Atom Computers - IT Technician -->
+        <div class="timeline-item">
+          <div class="timeline-badge">JUN 2024 — JUN 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Information Technology Technician</h3>
+                <span class="company-tag">Atom Computers · Full-time · On-site (Tirana, Albania)</span>
+              </div>
+            </div>
+            <p>
+              Focused toward IT infrastructure, assisting in the implementation of software and infrastructure projects. Handling Windows Server and Linux Server installation and configuration, including using Docker for application containerization. Additionally, deployed NAS systems and managed the installation of Endpoint Security.
+            </p>
+            <div class="pill-group">
+              <span class="tech-pill highlight">Windows Server</span>
+              <span class="tech-pill highlight">Linux Server</span>
+              <span class="tech-pill highlight">Docker Containerization</span>
+              <span class="tech-pill">NAS Systems</span>
+              <span class="tech-pill">Endpoint Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Atom Computers - IT Support Technician -->
+        <div class="timeline-item">
+          <div class="timeline-badge">OCT 2023 — JUN 2024</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>IT Support Technician</h3>
+                <span class="company-tag">Atom Computers · Part-time · On-site (Tirana, Albania)</span>
+              </div>
+            </div>
+            <p>
+              Provided remote and on-site technical support to B2B and B2C clients, troubleshooting issues across PC hardware, printers, and network devices. Responsible for assembling and configuring PCs, for both hardware components and software to meet specific customer requests and requirements.
+            </p>
+            <div class="pill-group">
+              <span class="tech-pill highlight">B2B &amp; B2C Support</span>
+              <span class="tech-pill highlight">PC Assembly &amp; Custom Builds</span>
+              <span class="tech-pill">Hardware Troubleshooting</span>
+              <span class="tech-pill">Network Devices</span>
+              <span class="tech-pill">Printers &amp; Peripherals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-badge">EDUCATION</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>B.Sc. in Information Technology</h3>
+                <span class="company-tag">Epoka University · Tirana, Albania</span>
+              </div>
+            </div>
+            <p>
+              Undergraduate studies focusing on Computer Networks, Operating Systems, Database Management Systems, Systems Architecture, and Software Engineering.
+            </p>
+            <div class="pill-group">
+              <span class="tech-pill highlight">Computer Networks</span>
+              <span class="tech-pill highlight">Linux Systems</span>
+              <span class="tech-pill">Databases</span>
+              <span class="tech-pill">Algorithms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: SKILLS & TECHNICAL ARSENAL ============ -->
+  <section class="skills-section" id="skills">
+    <div class="skills-head">
+      <div class="eyebrow">TECHNICAL ARSENAL</div>
+      <h2>My <em>Skills</em>, Tools, and Technologies.</h2>
+      <p>Technical proficiencies honed through real-world support at Atom Computers, Titan Albania, and custom system setups.</p>
+    </div>
+
+    <div class="skills-matrix">
+      <!-- Category 1 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🛠️</div>
+          <div>
+            <h3>Hardware &amp; Repair</h3>
+            <span>Diagnostics, assembly &amp; maintenance</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">Hardware Diagnostics</span>
+          <span class="tech-pill highlight">PC Assembly &amp; Builds</span>
+          <span class="tech-pill">SSD &amp; RAM Upgrades</span>
+          <span class="tech-pill">Thermal Servicing</span>
+          <span class="tech-pill">Component Upgrades</span>
+          <span class="tech-pill">Printer &amp; Peripheral Care</span>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🐧</div>
+          <div>
+            <h3>Operating Systems</h3>
+            <span>Installation, tuning &amp; administration</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">Windows Server</span>
+          <span class="tech-pill highlight">Rocky Linux</span>
+          <span class="tech-pill">Ubuntu Server / Desktop</span>
+          <span class="tech-pill">Windows 10 / 11</span>
+          <span class="tech-pill">Active Directory</span>
+          <span class="tech-pill">Debian</span>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🔌</div>
+          <div>
+            <h3>Networking &amp; Security</h3>
+            <span>Connectivity, routing &amp; firewalls</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">Wi-Fi Optimization</span>
+          <span class="tech-pill highlight">Routers &amp; Switches</span>
+          <span class="tech-pill">TCP/IP, DHCP &amp; DNS</span>
+          <span class="tech-pill">Firewall Setup</span>
+          <span class="tech-pill">VPN Tunnels</span>
+          <span class="tech-pill">Endpoint Security</span>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🏡</div>
+          <div>
+            <h3>Smart Home &amp; IoT</h3>
+            <span>Automation, hubs &amp; connected tech</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">Home Assistant</span>
+          <span class="tech-pill highlight">CCTV &amp; Access Controls</span>
+          <span class="tech-pill">Smart Lighting &amp; Relays</span>
+          <span class="tech-pill">IoT Network Isolation</span>
+          <span class="tech-pill">Smart Sensors</span>
+          <span class="tech-pill">Local DNS / Pi-hole</span>
+        </div>
+      </div>
+
+      <!-- Category 5 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">☁️</div>
+          <div>
+            <h3>Infrastructure &amp; Cloud</h3>
+            <span>Virtual machines, storage &amp; cloud</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">NAS Systems (TrueNAS)</span>
+          <span class="tech-pill highlight">Docker Containers</span>
+          <span class="tech-pill">VMware ESXi</span>
+          <span class="tech-pill">Microsoft 365</span>
+          <span class="tech-pill">Microsoft Power Platform</span>
+          <span class="tech-pill">Azure &amp; GCP</span>
+        </div>
+      </div>
+
+      <!-- Category 6 -->
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">💻</div>
+          <div>
+            <h3>Support &amp; Automation</h3>
+            <span>B2B/B2C support &amp; scripting tools</span>
+          </div>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill highlight">Remote &amp; On-Site Support</span>
+          <span class="tech-pill highlight">Asset Management</span>
+          <span class="tech-pill">Bash Scripting</span>
+          <span class="tech-pill">PowerShell</span>
+          <span class="tech-pill">PuTTY / SSH</span>
+          <span class="tech-pill">Python &amp; SQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: STATS / HIGHLIGHTS ============ -->
+  <section class="stats" id="stats">
+    <div class="stats-inner">
+      <div>
+        <div class="eyebrow text-light">SERVICE COMMITMENT</div>
+        <h3>Field-Proven<br /><em>IT Reliability</em>.</h3>
+      </div>
+
+      <div class="stat-block">
+        <div class="num" data-count="2"><span>0</span><small>+ yrs</small></div>
+        <div class="lbl">Professional IT Experience</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="num" data-count="100"><span>0</span><small>%</small></div>
+        <div class="lbl">Dedication to B2B &amp; B2C Clients</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="num" data-count="4"><span>0</span><small>Core</small></div>
+        <div class="lbl">Tailored Service Solutions</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION: CONTACT & CONNECT ============ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="eyebrow">GET IN TOUCH</div>
+        <h2>Need IT Support or <em>Smart Solutions</em>?</h2>
+        <p>
+          Whether you need a consultation on smart home automation, small business IT setup, software installation, or computer repair, reach out directly and I'll get back to you promptly.
+        </p>
+
+        <div class="contact-info-blocks">
+          <a href="mailto:sk3pp@pm.me" class="c-block">
+            <div class="c-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="c-label">Direct Email</div>
+              <div class="c-value">sk3pp@pm.me</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer" class="c-block">
+            <div class="c-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="c-label">LinkedIn Profile (Up to Date)</div>
+              <div class="c-value">linkedin.com/in/muhamedtereziu</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer" class="c-block">
+            <div class="c-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="c-label">GitHub Repository</div>
+              <div class="c-value">github.com/MuhamedTereziu</div>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/n0tmedi/" target="_blank" rel="noopener noreferrer" class="c-block">
+            <div class="c-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="c-label">Instagram</div>
+              <div class="c-value">@n0tmedi</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form" action="mailto:sk3pp@pm.me" method="post" enctype="text/plain">
+          <h3>Request Service or Support</h3>
+          <p>Leave a message with your requirements and I'll respond swiftly.</p>
+          
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service-type">Service Needed</label>
+            <select id="service-type" name="service" style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--line); background: #fbf9f5; font-family: inherit; font-size: 14px; color: var(--ink); margin-bottom: 6px;">
+              <option value="smart-home">Smart Home Solutions</option>
+              <option value="small-biz">Small Business IT Solutions</option>
+              <option value="software">Software Installation &amp; Maintaining</option>
+              <option value="repair">IT Repair Services &amp; Hardware Maintenance</option>
+              <option value="custom-build">Custom PC Assembly &amp; Build</option>
+              <option value="other">General IT Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe what you need assistance with..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Inquiry
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="logo">
+          <img src="assets/logo_diamond_only.png" alt="Muhamed Tereziu Logo" class="nav-logo-img" />
+          MUHAMED TEREZIU
+        </div>
+        <p>IT Technician · Smart Home, Business IT, Software &amp; Repairs · Tirana, Albania</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Muhamed Tereziu. All rights reserved. Built with GSAP &amp; modern web standards.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ DETAIL MODAL ============ -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal-content-slot" id="modalContentSlot">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
