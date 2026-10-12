@@ -116,99 +116,32 @@
           </div>
         </div>
 
-        <div class="hero-visual-card">
-          <div class="visual-card-top">
-            <div class="status-indicator">
-              <span class="status-pulse-dot"></span>
-              <span class="status-text">Infrastructure Core</span>
-            </div>
-            <span class="node-id">Tirana &middot; Node AL-01</span>
+        <div class="hero-overview-card">
+          <div class="overview-header">
+            <h3>Overview</h3>
+            <span class="overview-tag">Tirana, Albania</span>
           </div>
 
-          <!-- Architectural Vector Hardware Diagram -->
-          <div class="visual-graphic-container">
-            <svg class="blueprint-svg" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="var(--copper)" stop-opacity="0.2" />
-                  <stop offset="50%" stop-color="var(--copper)" stop-opacity="0.9" />
-                  <stop offset="100%" stop-color="var(--emerald)" stop-opacity="0.8" />
-                </linearGradient>
-                <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="rgba(245, 158, 11, 0.12)" />
-                  <stop offset="100%" stop-color="rgba(16, 185, 129, 0.05)" />
-                </linearGradient>
-              </defs>
-
-              <!-- Central Hardware Rack Unit -->
-              <rect x="50" y="25" width="220" height="34" rx="6" fill="var(--bg-surface)" stroke="var(--border)" stroke-width="1.5" />
-              <rect x="50" y="65" width="220" height="34" rx="6" fill="var(--bg-surface)" stroke="var(--border)" stroke-width="1.5" />
-              <rect x="50" y="105" width="220" height="34" rx="6" fill="var(--bg-surface)" stroke="var(--border)" stroke-width="1.5" />
-
-              <!-- Rack 1: Switch Ports -->
-              <circle cx="68" cy="42" r="3" fill="var(--emerald)" />
-              <circle cx="82" cy="42" r="3" fill="var(--emerald)" />
-              <circle cx="96" cy="42" r="3" fill="var(--copper)" />
-              <circle cx="110" cy="42" r="3" fill="var(--emerald)" />
-              <circle cx="124" cy="42" r="3" fill="var(--text-dim)" opacity="0.4" />
-              <circle cx="138" cy="42" r="3" fill="var(--emerald)" />
-              <line x1="160" y1="42" x2="250" y2="42" stroke="var(--border)" stroke-dasharray="3 3" />
-
-              <!-- Rack 2: Server Storage Drives -->
-              <rect x="65" y="73" width="16" height="18" rx="2" fill="var(--border)" />
-              <rect x="85" y="73" width="16" height="18" rx="2" fill="var(--border)" />
-              <rect x="105" y="73" width="16" height="18" rx="2" fill="var(--border)" />
-              <rect x="125" y="73" width="16" height="18" rx="2" fill="var(--border)" />
-              <circle cx="73" cy="87" r="1.5" fill="var(--copper)" />
-              <circle cx="93" cy="87" r="1.5" fill="var(--copper)" />
-              <circle cx="113" cy="87" r="1.5" fill="var(--copper)" />
-              <circle cx="133" cy="87" r="1.5" fill="var(--emerald)" />
-              <text x="160" y="86" fill="var(--text-muted)" font-family="monospace" font-size="9" letter-spacing="1">ZFS POOL: HEALTHY</text>
-
-              <!-- Rack 3: IoT & Gateway -->
-              <circle cx="68" cy="122" r="4" fill="rgba(245, 158, 11, 0.2)" stroke="var(--copper)" stroke-width="1.5" />
-              <circle cx="68" cy="122" r="1.5" fill="var(--copper)" />
-              <text x="82" y="125" fill="var(--text-muted)" font-family="monospace" font-size="9">VLAN: ISOLATED &middot; 1Gbps</text>
-              <circle cx="248" cy="122" r="3" fill="var(--emerald)" />
-
-              <!-- Connection Bus Lines -->
-              <path d="M 160 139 L 160 162" stroke="url(#lineGrad)" stroke-width="2" stroke-linecap="round" />
-              <circle cx="160" cy="164" r="3" fill="var(--emerald)" />
-            </svg>
-          </div>
-
-          <!-- Active Technical Node Chips -->
-          <div class="visual-card-grid">
-            <div class="v-chip">
-              <span class="v-dot emerald"></span>
-              <div class="v-info">
-                <strong>Titan Albania</strong>
-                <span>IT Help Desk &middot; Active</span>
-              </div>
+          <div class="overview-list">
+            <div class="overview-row">
+              <span class="row-label">Current Role</span>
+              <span class="row-val">IT Help Desk &middot; Titan Albania</span>
             </div>
-
-            <div class="v-chip">
-              <span class="v-dot copper"></span>
-              <div class="v-info">
-                <strong>Small Biz Networks</strong>
-                <span>VLANs &middot; Switches &middot; Wi-Fi</span>
-              </div>
+            <div class="overview-row">
+              <span class="row-label">Previous</span>
+              <span class="row-val">IT Technician &middot; Atom Computers</span>
             </div>
-
-            <div class="v-chip">
-              <span class="v-dot copper"></span>
-              <div class="v-info">
-                <strong>Smart Home Hub</strong>
-                <span>Home Assistant &middot; IoT</span>
-              </div>
+            <div class="overview-row">
+              <span class="row-label">Education</span>
+              <span class="row-val">B.Sc. in IT &middot; Epoka University</span>
             </div>
-
-            <div class="v-chip">
-              <span class="v-dot emerald"></span>
-              <div class="v-info">
-                <strong>Storage &amp; Server</strong>
-                <span>TrueNAS &middot; Docker &middot; Linux</span>
-              </div>
+            <div class="overview-row">
+              <span class="row-label">Core Services</span>
+              <span class="row-val">Office Networks &middot; Smart Home &middot; PC Repairs</span>
+            </div>
+            <div class="overview-row">
+              <span class="row-label">Direct Email</span>
+              <a href="mailto:m@1234.al" class="row-val row-link">m@1234.al &rarr;</a>
             </div>
           </div>
         </div>
