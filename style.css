@@ -241,6 +241,11 @@ a {
   width: 26px;
   height: 26px;
   object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+[data-theme="light"] .brand-logo {
+  filter: invert(1);
 }
 
 .nav-links {
