@@ -3,56 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhamed Tereziu — IT Systems Specialist & Infrastructure Technician</title>
-  <meta name="description" content="Portfolio of Muhamed Tereziu (Medi) — IT Systems Specialist & Infrastructure Technician in Tirana, Albania. Enterprise IT, Smart Home Automation, Small Business Networks, Linux/Windows Servers, and Custom Workstations." />
-  <meta name="keywords" content="Muhamed Tereziu, IT Technician, Systems Specialist, Smart Home, Network Architect, Tirana Albania, Titan Albania, Atom Computers, TrueNAS, Docker, Home Assistant" />
+  <title>Muhamed Tereziu — IT Technician & Systems Support</title>
+  <meta name="description" content="Personal portfolio of Muhamed Tereziu — IT Technician based in Tirana, Albania. Enterprise IT support, smart home setups, small business networks, and hardware repairs." />
   <link rel="icon" type="image/png" href="assets/logo_diamond_only.png" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <!-- Background Ambience & Blueprint Grid -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
-  <div class="blueprint-grid"></div>
-
-  <!-- NAVIGATION -->
-  <header class="navbar" id="navbar">
+  <!-- Navigation -->
+  <header class="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-brand">
         <img src="assets/logo_diamond_only.png" alt="Logo" class="brand-logo" />
-        <div class="brand-text">
-          <span class="brand-name">MUHAMED TEREZIU</span>
-          <span class="brand-role">SYSTEMS &middot; IT SPECIALIST</span>
-        </div>
+        <span class="brand-name">Muhamed Tereziu</span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Arsenal</a>
-        <a href="#calculator" class="nav-link">Inquiry Builder</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Nav Actions -->
-      <div class="nav-actions">
-        <!-- Live Status Pill -->
-        <div class="node-status" title="Current status: Titan Albania / Available for select B2B & B2C projects">
-          <span class="status-pulse"></span>
-          <span class="status-label">Tirana &middot; Systems Online</span>
-        </div>
-
-        <!-- Theme Switcher -->
-        <button id="themeToggle" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle theme">
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme" title="Toggle theme">
           <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -69,17 +49,9 @@
           </svg>
         </button>
 
-        <!-- CTA Button -->
-        <a href="#contact" class="btn btn-primary nav-cta">
-          <span>Get In Touch</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
+        <a href="#contact" class="btn btn-sm btn-primary">Get in Touch</a>
 
-        <!-- Mobile Drawer Toggle -->
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
           <span></span>
           <span></span>
           <span></span>
@@ -88,1019 +60,346 @@
     </div>
   </header>
 
-  <!-- MOBILE NAVIGATION DRAWER -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <div class="drawer-inner">
-      <ul class="drawer-links">
-        <li><a href="#about" class="drawer-link">About</a></li>
-        <li><a href="#services" class="drawer-link">Services</a></li>
-        <li><a href="#experience" class="drawer-link">Experience</a></li>
-        <li><a href="#skills" class="drawer-link">Technical Arsenal</a></li>
-        <li><a href="#calculator" class="drawer-link">Inquiry Builder</a></li>
-        <li><a href="#contact" class="drawer-link">Contact & Inquiries</a></li>
-      </ul>
-      <div class="drawer-footer">
-        <a href="mailto:m@1234.al" class="drawer-email">m@1234.al</a>
-        <div class="drawer-socials">
-          <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span>&middot;</span>
-          <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <span>&middot;</span>
-          <a href="https://www.instagram.com/mterez1u/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" class="m-link">Services</a>
+    <a href="#experience" class="m-link">Experience</a>
+    <a href="#skills" class="m-link">Skills</a>
+    <a href="#contact" class="m-link">Contact</a>
+    <div class="m-footer">
+      <a href="mailto:m@1234.al">m@1234.al</a>
+      <div class="m-socials">
+        <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>·</span>
+        <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>·</span>
+        <a href="https://www.instagram.com/mterez1u/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </div>
 
   <main>
-    <!-- ==================== HERO SECTION ==================== -->
-    <section class="hero-section" id="hero">
-      <div class="container">
-        
-        <div class="hero-badge-row">
-          <div class="badge-pill">
-            <span class="badge-dot"></span>
-            <span>IT SYSTEMS &middot; INFRASTRUCTURE &middot; SMART HARDWARE</span>
-          </div>
-          <div class="telemetry-pill">
-            <span id="liveClock">--:--:-- UTC</span>
-          </div>
-        </div>
-
-        <h1 class="hero-title">
-          Architecting resilient <span class="gradient-text">IT systems</span>, corporate networks &amp; smart tech.
-        </h1>
-
-        <p class="hero-lead">
-          Hi, I'm <strong>Muhamed Tereziu</strong>. IT Help Desk at <strong>Titan Albania</strong>, formerly technician at <strong>Atom Computers</strong>. I engineer mission-critical business networks, build Linux/Windows server infrastructures, automate IoT environments, and assemble high-performance computing hardware.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#services" class="btn btn-primary btn-lg">
-            <span>Explore Services &amp; Solutions</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn-secondary btn-lg">
-            <span>Request Support</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L1 7"></path>
-            </svg>
-          </a>
-        </div>
-
-        <!-- BENTO HERO SHOWCASE -->
-        <div class="hero-bento">
-          
-          <!-- Bento 1: Avatar & Bio Quick Card -->
-          <div class="bento-card bento-profile">
-            <div class="profile-header">
-              <div class="avatar-ring">
-                <img src="assets/technician_avatar.jpg" alt="Muhamed Tereziu" class="avatar-img" />
-                <span class="avatar-status"></span>
-              </div>
-              <div class="profile-meta">
-                <h3>Muhamed Tereziu</h3>
-                <span class="role-caption">IT Technician &amp; Systems Specialist</span>
-                <span class="location-caption">📍 Tirana, Albania</span>
-              </div>
-            </div>
-            <div class="profile-summary">
-              <p>Combining corporate enterprise support at Titan Albania with over 1.7 years of intensive server, Docker, and hardware operations at Atom Computers.</p>
-            </div>
-            <div class="profile-tags">
-              <span class="chip">Titan Albania</span>
-              <span class="chip">Atom Computers</span>
-              <span class="chip">Epoka Univ B.Sc.</span>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="location-badge">
+            <span class="dot"></span>
+            <span>Tirana, Albania</span>
           </div>
 
-          <!-- Bento 2: Quick Metrics / Stats -->
-          <div class="bento-card bento-metrics">
-            <div class="metric-item">
-              <span class="metric-num">2+</span>
-              <span class="metric-lbl">Years Field Experience</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-num">100%</span>
-              <span class="metric-lbl">Client SLA Commitment</span>
-            </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-num">6</span>
-              <span class="metric-lbl">Core Specialized Pillars</span>
-            </div>
-          </div>
+          <h1 class="hero-title">
+            IT Technician &amp; Systems Specialist.
+          </h1>
 
-          <!-- Bento 3: Systems Telemetry Card -->
-          <div class="bento-card bento-telemetry">
-            <div class="telemetry-header">
-              <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <span class="telemetry-title">HOST: 1234.AL &middot; TELEMETRY</span>
-            </div>
-            <div class="telemetry-rows">
-              <div class="t-row">
-                <span class="t-key">Current Role</span>
-                <span class="t-val highlight">Titan Albania (Help Desk)</span>
-              </div>
-              <div class="t-row">
-                <span class="t-key">Primary OS</span>
-                <span class="t-val">Rocky Linux / Win Server</span>
-              </div>
-              <div class="t-row">
-                <span class="t-key">Key Stacks</span>
-                <span class="t-val">Docker &middot; TrueNAS &middot; IoT</span>
-              </div>
-              <div class="t-row">
-                <span class="t-key">Network Node</span>
-                <span class="t-val online">HTTP/3 &middot; TLS 1.3 Active</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bento 4: Interactive Service Quick Triggers -->
-          <div class="bento-card bento-quickservices">
-            <span class="card-eyebrow">FIELD SERVICES SNAPSHOT</span>
-            <div class="quickservice-pills">
-              <button class="service-pill" data-modal="modal-smarthome">
-                <span>🏡 Smart Home &amp; IoT</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-              <button class="service-pill" data-modal="modal-smallbiz">
-                <span>💼 Small Business IT</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-              <button class="service-pill" data-modal="modal-repair">
-                <span>🔧 Hardware Diagnostics</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-              <button class="service-pill" data-modal="modal-network">
-                <span>🔌 Networks &amp; VLANs</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== INTERACTIVE TERMINAL SECTION ==================== -->
-    <section class="terminal-section" id="terminal-dock">
-      <div class="container">
-        <div class="terminal-container">
-          <div class="terminal-topbar">
-            <div class="terminal-dots">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <span class="terminal-heading">bash — muhamed@1234.al (~/systems-outpost)</span>
-            <div class="terminal-badge">INTERACTIVE</div>
-          </div>
-          
-          <div class="terminal-body" id="terminalOutput">
-            <p class="term-line"><span class="term-prompt">visitor@1234.al:~$</span> sysinfo</p>
-            <p class="term-response">Muhamed Tereziu &middot; IT Systems & Infrastructure Specialist [Tirana, Albania]</p>
-            <p class="term-response dim">Type a command or click an executable trigger below to inspect system details.</p>
-          </div>
-
-          <div class="terminal-actions">
-            <div class="action-chips">
-              <button class="chip-cmd" data-cmd="whoami">whoami</button>
-              <button class="chip-cmd" data-cmd="services">services</button>
-              <button class="chip-cmd" data-cmd="experience">experience</button>
-              <button class="chip-cmd" data-cmd="arsenal">arsenal</button>
-              <button class="chip-cmd" data-cmd="contact">contact</button>
-              <button class="chip-cmd" data-cmd="clear">clear</button>
-            </div>
-            <div class="terminal-input-wrap">
-              <span class="term-prompt">$</span>
-              <input type="text" id="terminalInput" class="terminal-input" placeholder="try 'whoami', 'services', or 'contact'..." autocomplete="off" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== ABOUT DEEP DIVE SECTION ==================== -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">ABOUT MUHAMED TEREZIU</span>
-          <h2 class="section-title">Hands-on infrastructure engineering &amp; enterprise support.</h2>
-          <p class="section-desc">
-            Bridging corporate IT operations, small business infrastructure deployment, and customized smart technology integrations with meticulous precision.
+          <p class="hero-text">
+            I'm <strong>Muhamed Tereziu</strong>. Currently working in IT Help Desk at <strong>Titan Albania</strong>, previously at <strong>Atom Computers</strong>. I help businesses and individuals set up networks, configure servers, automate smart homes, and repair computer hardware.
           </p>
-        </div>
 
-        <div class="about-grid">
-          <div class="about-card-left">
-            <div class="profile-photo-wrap">
-              <img src="assets/technician_card.jpg" alt="Muhamed Tereziu IT Technician" class="profile-photo" />
-              <div class="photo-overlay-badge">
-                <span class="beacon"></span>
-                <span>TITAN ALBANIA &middot; IT HELP DESK</span>
-              </div>
-            </div>
-            <div class="credential-box">
-              <h4>Academic &amp; Professional Foundation</h4>
-              <p>Bachelor of Science in Information Technology from <strong>Epoka University</strong>. Practical field expertise spanning hardware diagnostics, system virtualization, enterprise networks, and automated business workflows.</p>
-            </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="#services" class="btn btn-secondary">What I Do</a>
           </div>
 
-          <div class="about-card-right">
-            <h3>Enterprise Standards &amp; Precision Fieldcraft</h3>
-            <p>
-              My journey in information technology balances strict enterprise compliance with practical, component-level engineering. At <strong>Titan Albania</strong>, I manage day-to-day employee IT infrastructure, network stability, hardware asset governance, CCTV/access security, and process automation utilizing the <strong>Microsoft Power Platform</strong>.
-            </p>
-            <p>
-              Prior to Titan, I spent <strong>1 year and 9 months at Atom Computers</strong> serving as an <strong>IT Technician</strong> and <strong>IT Support Technician</strong>. There, I installed and administered <strong>Windows and Linux Servers</strong>, containerized applications with <strong>Docker</strong>, rolled out fault-tolerant <strong>TrueNAS</strong> storage systems, implemented endpoint security, and assembled bespoke high-performance workstation builds.
-            </p>
-
-            <div class="feature-bullets">
-              <div class="f-bullet">
-                <div class="f-bullet-icon">⚡</div>
-                <div class="f-bullet-content">
-                  <h4>Zero-Downtime Approach</h4>
-                  <p>Configuring redundant storage (ZFS/RAID), proactive backups, and isolated subnets so your business never stalls.</p>
-                </div>
-              </div>
-              <div class="f-bullet">
-                <div class="f-bullet-icon">🛡️</div>
-                <div class="f-bullet-content">
-                  <h4>Security-First Network Design</h4>
-                  <p>VLAN segmentation, isolated IoT networks, hardware firewall policies, and secure WireGuard/OpenVPN connections.</p>
-                </div>
-              </div>
-              <div class="f-bullet">
-                <div class="f-bullet-icon">🔍</div>
-                <div class="f-bullet-content">
-                  <h4>Root-Cause Diagnostics</h4>
-                  <p>Methodical hardware troubleshooting, component-level repair, and thermal optimization rather than blind parts replacement.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="about-cta-row">
-              <a href="#services" class="btn btn-primary">
-                <span>View Full Capabilities</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <span>LinkedIn Profile</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-            </div>
+          <div class="quick-links">
+            <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="mailto:m@1234.al">m@1234.al</a>
           </div>
         </div>
 
+        <div class="hero-image-wrap">
+          <img src="assets/technician_avatar.jpg" alt="Muhamed Tereziu" class="hero-avatar" />
+          <div class="hero-caption">
+            <strong>Muhamed Tereziu</strong>
+            <span>IT Technician &middot; Titan Albania</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ==================== SERVICES & ARCHITECTURE EXPLORER ==================== -->
-    <section class="section services-section" id="services">
+    <!-- Services Section -->
+    <section class="section" id="services">
       <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">SERVICES &amp; SOLUTIONS</span>
-          <h2 class="section-title">Specialized IT Capabilities &amp; Field Offerings.</h2>
-          <p class="section-desc">
-            Explore the core engineering services offered for private residences, commercial offices, and business organizations. Click any card to view detailed specifications.
-          </p>
+        <div class="section-head">
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-sub">End-to-end technical support, hardware repair, and system setup.</p>
         </div>
 
-        <div class="services-grid">
-          
-          <!-- Card 1: Smart Home -->
+        <div class="cards-grid">
+          <!-- Service 1 -->
           <div class="service-card" data-modal="modal-smarthome">
-            <div class="card-img-wrap">
-              <img src="assets/card_smarthome.jpg" alt="Smart Home Solutions" class="card-img" />
-              <span class="card-category-badge">Residential &middot; IoT</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">Smart Home Solutions &amp; Automation</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Unifying Home Assistant, Apple Home, and Google Home into a local, unthrottled automation hub. Includes lighting, climate, video surveillance, and isolated IoT VLANs.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Home Assistant</span>
-                <span class="tech-tag">Zigbee &amp; Matter</span>
-                <span class="tech-tag">IoT VLANs</span>
-                <span class="tech-tag">Smart CCTV</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
+            <img src="assets/card_smarthome.jpg" alt="Smart Home" class="card-thumb" />
+            <div class="card-body">
+              <h3>Smart Home Automation</h3>
+              <p>Home Assistant integration, smart lighting, automated climate, cameras, and dedicated Wi-Fi subnets for IoT devices.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
           </div>
 
-          <!-- Card 2: Small Business IT -->
+          <!-- Service 2 -->
           <div class="service-card" data-modal="modal-smallbiz">
-            <div class="card-img-wrap">
-              <img src="assets/card_smallbiz.jpg" alt="Small Business IT Solutions" class="card-img" />
-              <span class="card-category-badge">Commercial &middot; Enterprise</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">Small Business IT Solutions</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Turnkey IT infrastructure designed to eliminate operational downtime. Structured office networks, TrueNAS storage, multi-AP Wi-Fi mesh, workstation rollouts, and backups.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Office Networks</span>
-                <span class="tech-tag">TrueNAS Storage</span>
-                <span class="tech-tag">Commercial Wi-Fi</span>
-                <span class="tech-tag">Workstation Fleets</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
+            <img src="assets/card_smallbiz.jpg" alt="Small Business IT" class="card-thumb" />
+            <div class="card-body">
+              <h3>Small Business IT</h3>
+              <p>Office network setup, multi-room Wi-Fi, centralized TrueNAS storage, automated data backups, and employee workstations.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
           </div>
 
-          <!-- Card 3: Software & Systems -->
+          <!-- Service 3 -->
           <div class="service-card" data-modal="modal-software">
-            <div class="card-img-wrap">
-              <img src="assets/card_software.jpg" alt="Software Installation & Maintenance" class="card-img" />
-              <span class="card-category-badge">OS &middot; Server Administration</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">Software Installation &amp; Maintaining</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Certified installations and scheduled software upkeep. Clean deployments of Windows 10/11 &amp; Linux distributions, patch management, endpoint security, and remote troubleshooting.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Windows Server</span>
-                <span class="tech-tag">Rocky Linux</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Endpoint Protection</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
+            <img src="assets/card_software.jpg" alt="Software Maintenance" class="card-thumb" />
+            <div class="card-body">
+              <h3>Software &amp; OS Maintenance</h3>
+              <p>Windows and Linux installations, clean setup, software updates, driver optimization, and remote technical support.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
           </div>
 
-          <!-- Card 4: Hardware Repair & Servicing -->
+          <!-- Service 4 -->
           <div class="service-card" data-modal="modal-repair">
-            <div class="card-img-wrap">
-              <img src="assets/card_repair.jpg" alt="IT Repair & Hardware Servicing" class="card-img" />
-              <span class="card-category-badge">Hardware &middot; Diagnostics</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">IT Repair Services &amp; Hardware Servicing</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Deep hardware diagnostics, resolving boot failures, thermal bottlenecks, and motherboard/GPU faults. High-speed NVMe SSD &amp; RAM expansions, deep thermal repasting, and data recovery.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Component Diagnostics</span>
-                <span class="tech-tag">SSD/RAM Expansions</span>
-                <span class="tech-tag">Thermal Repasting</span>
-                <span class="tech-tag">Data Recovery</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
+            <img src="assets/card_repair.jpg" alt="Hardware Repair" class="card-thumb" />
+            <div class="card-body">
+              <h3>Hardware Diagnostics &amp; Repairs</h3>
+              <p>PC and laptop troubleshooting, thermal paste replacement, SSD and RAM upgrades, cleaning, and data recovery.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
           </div>
 
-          <!-- Card 5: Network Setup & Security -->
+          <!-- Service 5 -->
           <div class="service-card" data-modal="modal-network">
-            <div class="card-img-wrap">
-              <img src="assets/card_network.jpg" alt="Network Installation & Security" class="card-img" />
-              <span class="card-category-badge">Infrastructure &middot; Security</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">Network Architecture, VLANs &amp; Security</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Managed switches, routers, and gateway firewalls. Subnet isolation, VPN tunnels, QoS bandwidth shaping, and professional Ethernet/patch-panel structured cabling.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Managed Switches</span>
-                <span class="tech-tag">Firewalls &amp; VPN</span>
-                <span class="tech-tag">VLAN Segmentation</span>
-                <span class="tech-tag">Structured Cabling</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
+            <img src="assets/card_network.jpg" alt="Networking" class="card-thumb" />
+            <div class="card-body">
+              <h3>Network Setup &amp; Security</h3>
+              <p>Routers, switches, Wi-Fi optimization, VLAN segmentation, and VPN setup for secure remote access.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
           </div>
 
-          <!-- Card 6: Custom PC Builds -->
+          <!-- Service 6 -->
           <div class="service-card" data-modal="modal-assembly">
-            <div class="card-img-wrap">
-              <img src="assets/card_pcbuild.jpg" alt="Custom PC Assembly & Builds" class="card-img" />
-              <span class="card-category-badge">Workstations &middot; Assembly</span>
+            <img src="assets/card_pcbuild.jpg" alt="PC Builds" class="card-thumb" />
+            <div class="card-body">
+              <h3>Custom PC Builds</h3>
+              <p>Component selection, assembly, cable management, BIOS configuration, and stress testing for work or gaming.</p>
+              <span class="card-link">View details &rarr;</span>
             </div>
-            <div class="card-content">
-              <div class="card-header-row">
-                <h3 class="card-title">Custom PC Assembly &amp; Workstations</h3>
-                <span class="card-icon-action">↗</span>
-              </div>
-              <p class="card-excerpt">
-                Tailored computer assembly engineered for creative studios, developers, simulation workloads, and high-end gaming. Thermal airflow simulation, clean cable routing, BIOS tuning, and stress tests.
-              </p>
-              <div class="card-tech-pills">
-                <span class="tech-tag">Tailored Component Spec</span>
-                <span class="tech-tag">Airflow Optimization</span>
-                <span class="tech-tag">Cable Craft</span>
-                <span class="tech-tag">Stability Stress-Testing</span>
-              </div>
-              <div class="card-footer-cta">
-                <span>View Full Specifications &rarr;</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== CAREER & EXPERIENCE TIMELINE ==================== -->
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">CAREER MILESTONES</span>
-          <h2 class="section-title">Verified Experience &amp; Professional History.</h2>
-          <p class="section-desc">
-            A documented track record across corporate enterprise IT operations, specialized computer service businesses, and academic technical foundations.
-          </p>
-        </div>
-
-        <div class="timeline-container">
-          
-          <!-- Role 1: Titan Albania -->
-          <div class="timeline-node current">
-            <div class="timeline-marker">
-              <span class="marker-dot"></span>
-              <span class="marker-line"></span>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-badge-bar">
-                <span class="badge-role current">CURRENT ROLE</span>
-                <span class="badge-date">MAR 2026 — PRESENT &middot; FULL-TIME &middot; ON-SITE</span>
-              </div>
-              <div class="timeline-header-wrap">
-                <div>
-                  <h3 class="timeline-role-title">Information Technology Help Desk</h3>
-                  <h4 class="timeline-company-title">Titan Albania &middot; Tirana, Albania</h4>
-                </div>
-                <img src="assets/card_titan.jpg" alt="Titan Albania" class="timeline-thumb" />
-              </div>
-              <p class="timeline-description">
-                Responsible for delivering enterprise end-user IT support and administering corporate infrastructure, network topology, and workstation hardware. Key operational duties include onboarding/offboarding workflows, physical access controls &amp; CCTV monitoring, GDPR compliance protocols, and driving business process automation via the Microsoft Power Platform.
-              </p>
-              <div class="timeline-stack">
-                <span class="stack-chip highlight">Windows Server</span>
-                <span class="stack-chip highlight">Enterprise Infrastructure</span>
-                <span class="stack-chip">CCTV &amp; Access Controls</span>
-                <span class="stack-chip">Microsoft Power Platform</span>
-                <span class="stack-chip">Asset Management</span>
-                <span class="stack-chip">GDPR Compliance</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Role 2: Atom Computers - IT Technician -->
-          <div class="timeline-node">
-            <div class="timeline-marker">
-              <span class="marker-dot"></span>
-              <span class="marker-line"></span>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-badge-bar">
-                <span class="badge-role">INFRASTRUCTURE ROLE</span>
-                <span class="badge-date">JUN 2024 — JUN 2025 (1 YR) &middot; FULL-TIME</span>
-              </div>
-              <div class="timeline-header-wrap">
-                <div>
-                  <h3 class="timeline-role-title">Information Technology Technician</h3>
-                  <h4 class="timeline-company-title">Atom Computers &middot; Tirana, Albania</h4>
-                </div>
-                <img src="assets/card_atom.jpg" alt="Atom Computers" class="timeline-thumb" />
-              </div>
-              <p class="timeline-description">
-                Spearheaded hands-on IT infrastructure and software implementation projects. Managed installation and configuration of Windows Server and Linux Server environments, implemented Docker containerization, deployed multi-drive NAS systems (TrueNAS), and rolled out centralized Endpoint Security protection.
-              </p>
-              <div class="timeline-stack">
-                <span class="stack-chip highlight">Windows Server</span>
-                <span class="stack-chip highlight">Linux Server</span>
-                <span class="stack-chip highlight">Docker Containerization</span>
-                <span class="stack-chip">NAS (TrueNAS)</span>
-                <span class="stack-chip">Endpoint Security</span>
-                <span class="stack-chip">Network Racks</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Role 3: Atom Computers - Support Technician -->
-          <div class="timeline-node">
-            <div class="timeline-marker">
-              <span class="marker-dot"></span>
-              <span class="marker-line"></span>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-badge-bar">
-                <span class="badge-role">SUPPORT &amp; ASSEMBLY</span>
-                <span class="badge-date">OCT 2023 — JUN 2024 (9 MOS) &middot; PART-TIME</span>
-              </div>
-              <div class="timeline-header-wrap">
-                <div>
-                  <h3 class="timeline-role-title">IT Support Technician</h3>
-                  <h4 class="timeline-company-title">Atom Computers &middot; Tirana, Albania</h4>
-                </div>
-                <img src="assets/card_repair.jpg" alt="IT Support" class="timeline-thumb" />
-              </div>
-              <p class="timeline-description">
-                Provided remote and on-site technical support to diverse B2B and B2C clients, troubleshooting intricate faults across PC hardware, printers, and network connectivity. Built and assembled custom PCs, validating compatibility across high-performance components and software to exact client requirements.
-              </p>
-              <div class="timeline-stack">
-                <span class="stack-chip highlight">B2B &amp; B2C Support</span>
-                <span class="stack-chip highlight">Custom PC Assembly</span>
-                <span class="stack-chip">Hardware Diagnostics</span>
-                <span class="stack-chip">Printers &amp; Peripherals</span>
-                <span class="stack-chip">Client SLA Resolution</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Role 4: Education -->
-          <div class="timeline-node">
-            <div class="timeline-marker">
-              <span class="marker-dot"></span>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-badge-bar">
-                <span class="badge-role">ACADEMIC FOUNDATION</span>
-                <span class="badge-date">UNDERGRADUATE STUDIES</span>
-              </div>
-              <div class="timeline-header-wrap">
-                <div>
-                  <h3 class="timeline-role-title">B.Sc. in Information Technology</h3>
-                  <h4 class="timeline-company-title">Epoka University &middot; Tirana, Albania</h4>
-                </div>
-                <img src="assets/technician_profile.jpg" alt="Epoka University" class="timeline-thumb" />
-              </div>
-              <p class="timeline-description">
-                Rigorous curriculum covering Computer Networks, Operating Systems, Database Management Systems, Computer Architecture, Distributed Systems, and Software Engineering.
-              </p>
-              <div class="timeline-stack">
-                <span class="stack-chip highlight">Computer Networks</span>
-                <span class="stack-chip highlight">Operating Systems</span>
-                <span class="stack-chip">Database Management</span>
-                <span class="stack-chip">Algorithms</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== TECHNICAL ARSENAL & SKILLS MATRIX ==================== -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">TECHNICAL ARSENAL</span>
-          <h2 class="section-title">Tested Tools, Operating Systems &amp; Frameworks.</h2>
-          <p class="section-desc">
-            Technologies and protocols verified through daily enterprise support, network rollouts, server deployments, and hardware operations.
-          </p>
-        </div>
-
-        <div class="skills-filter-bar">
-          <button class="filter-btn active" data-filter="all">All Disciplines</button>
-          <button class="filter-btn" data-filter="hardware">Hardware &amp; Repair</button>
-          <button class="filter-btn" data-filter="os">Operating Systems</button>
-          <button class="filter-btn" data-filter="network">Networking &amp; Security</button>
-          <button class="filter-btn" data-filter="iot">Smart Home &amp; IoT</button>
-          <button class="filter-btn" data-filter="cloud">Storage &amp; Cloud</button>
-        </div>
-
-        <div class="skills-grid" id="skillsGrid">
-          
-          <!-- Category 1 -->
-          <div class="skill-group-card" data-category="hardware">
-            <div class="group-header">
-              <span class="group-icon">🛠️</span>
-              <div>
-                <h4>Hardware &amp; Diagnostics</h4>
-                <span class="group-desc">Component-level testing &amp; assembly</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">Hardware Diagnostics</span>
-              <span class="tech-pill highlight">PC Assembly &amp; Builds</span>
-              <span class="tech-pill">NVMe SSD &amp; RAM Upgrades</span>
-              <span class="tech-pill">Thermal Repasting</span>
-              <span class="tech-pill">Component Sourcing</span>
-              <span class="tech-pill">Printers &amp; Peripheral Care</span>
-              <span class="tech-pill">Power Supply Testing</span>
-            </div>
-          </div>
-
-          <!-- Category 2 -->
-          <div class="skill-group-card" data-category="os">
-            <div class="group-header">
-              <span class="group-icon">🐧</span>
-              <div>
-                <h4>Operating Systems &amp; Servers</h4>
-                <span class="group-desc">Administration, security &amp; tuning</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">Windows Server</span>
-              <span class="tech-pill highlight">Rocky Linux</span>
-              <span class="tech-pill highlight">Ubuntu Server &amp; Desktop</span>
-              <span class="tech-pill">Windows 10 / 11 Pro</span>
-              <span class="tech-pill">Active Directory</span>
-              <span class="tech-pill">Debian</span>
-              <span class="tech-pill">Sysprep &amp; Imaging</span>
-            </div>
-          </div>
-
-          <!-- Category 3 -->
-          <div class="skill-group-card" data-category="network">
-            <div class="group-header">
-              <span class="group-icon">🔌</span>
-              <div>
-                <h4>Networking &amp; Cyber Security</h4>
-                <span class="group-desc">Routing, VLANs, Wi-Fi &amp; firewalls</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">Managed Switches &amp; Routers</span>
-              <span class="tech-pill highlight">VLAN Segmentation</span>
-              <span class="tech-pill highlight">Wi-Fi Mesh / Multi-AP</span>
-              <span class="tech-pill">TCP/IP, DHCP, DNS &amp; Pi-hole</span>
-              <span class="tech-pill">WireGuard &amp; OpenVPN</span>
-              <span class="tech-pill">Firewall ACL Policies</span>
-              <span class="tech-pill">Endpoint Protection</span>
-            </div>
-          </div>
-
-          <!-- Category 4 -->
-          <div class="skill-group-card" data-category="iot">
-            <div class="group-header">
-              <span class="group-icon">🏡</span>
-              <div>
-                <h4>Smart Home &amp; IoT Ecosystems</h4>
-                <span class="group-desc">Home automation &amp; surveillance</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">Home Assistant</span>
-              <span class="tech-pill highlight">Zigbee &amp; Matter</span>
-              <span class="tech-pill highlight">CCTV &amp; Access Controls</span>
-              <span class="tech-pill">Isolated IoT Subnets</span>
-              <span class="tech-pill">Smart Relays &amp; Sensors</span>
-              <span class="tech-pill">Apple HomeKit / Google Home</span>
-            </div>
-          </div>
-
-          <!-- Category 5 -->
-          <div class="skill-group-card" data-category="cloud">
-            <div class="group-header">
-              <span class="group-icon">☁️</span>
-              <div>
-                <h4>Storage, Containers &amp; Cloud</h4>
-                <span class="group-desc">Virtualization, backups &amp; automation</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">TrueNAS &amp; ZFS Pools</span>
-              <span class="tech-pill highlight">Docker Containers</span>
-              <span class="tech-pill highlight">Microsoft Power Platform</span>
-              <span class="tech-pill">VMware ESXi</span>
-              <span class="tech-pill">Microsoft 365 Admin</span>
-              <span class="tech-pill">Automated Cloud/Local Backups</span>
-            </div>
-          </div>
-
-          <!-- Category 6 -->
-          <div class="skill-group-card" data-category="os">
-            <div class="group-header">
-              <span class="group-icon">💻</span>
-              <div>
-                <h4>Support, Scripting &amp; Utilities</h4>
-                <span class="group-desc">Remote troubleshooting &amp; scripts</span>
-              </div>
-            </div>
-            <div class="group-pills">
-              <span class="tech-pill highlight">Remote &amp; On-Site Support</span>
-              <span class="tech-pill highlight">Bash Scripting</span>
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill">SSH &amp; PuTTY</span>
-              <span class="tech-pill">Asset Governance</span>
-              <span class="tech-pill">Python &amp; SQL Basics</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== INTERACTIVE INQUIRY BUILDER ==================== -->
-    <section class="section calculator-section" id="calculator">
-      <div class="container">
-        <div class="calc-box">
-          <div class="calc-header">
-            <span class="section-tag">TAILORED INQUIRY BUILDER</span>
-            <h2>Select what you need &amp; build your direct inquiry.</h2>
-            <p>Check the capabilities matching your project scope. This automatically formats a message for fast review.</p>
-          </div>
-
-          <div class="calc-options-grid">
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Smart Home Automation (Home Assistant, Lighting, Sensors)" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">Smart Home Automation</div>
-                  <div class="cb-sub">Home Assistant hub, smart lighting, sensors &amp; CCTV setup</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Small Business Office Network & Commercial Wi-Fi" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">Small Business Network</div>
-                  <div class="cb-sub">Routers, managed switches, commercial multi-AP Wi-Fi</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Centralized NAS Storage & Data Backup Strategy" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">NAS Storage &amp; Backups</div>
-                  <div class="cb-sub">TrueNAS deployment, RAID/ZFS storage, automated backup routines</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Hardware Diagnostics & Precision Component Repair" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">Hardware Diagnostics &amp; Repair</div>
-                  <div class="cb-sub">Thermal repasting, boot fault repair, SSD/RAM upgrades</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Custom Workstation Assembly & Tailored Build" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">Custom PC / Workstation Build</div>
-                  <div class="cb-sub">Hardware sourcing, cable management, airflow tuning &amp; stress test</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="calc-item">
-              <input type="checkbox" class="calc-cb" value="Server & Docker Infrastructure Deployment" />
-              <div class="calc-box-ui">
-                <div class="cb-check">✓</div>
-                <div>
-                  <div class="cb-title">Server &amp; Docker Setup</div>
-                  <div class="cb-sub">Windows/Linux servers, Docker containers, remote VPN access</div>
-                </div>
-              </div>
-            </label>
-          </div>
-
-          <div class="calc-footer">
-            <div class="calc-summary">
-              <span class="cs-label">Selected Scope:</span>
-              <span id="calcSummaryCount" class="cs-count">0 services selected</span>
-            </div>
-            <button id="applyToFormBtn" class="btn btn-primary">
-              <span>Transfer to Contact Form</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CONTACT & INQUIRIES SECTION ==================== -->
-    <section class="section contact-section" id="contact">
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
       <div class="container">
-        
-        <div class="contact-grid">
-          
-          <!-- Contact Left: Direct Channels -->
-          <div class="contact-info-col">
-            <span class="section-tag">DIRECT CHANNELS</span>
-            <h2 class="contact-heading">Let's discuss your systems or IT requirements.</h2>
-            <p class="contact-sub">
-              Whether you represent an enterprise team in Tirana, a growing business upgrading network infrastructure, or need bespoke smart home automation, reach out directly.
+        <div class="section-head">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-sub">My career history and hands-on roles.</p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Role 1 -->
+          <div class="exp-item">
+            <div class="exp-date">Mar 2026 — Present</div>
+            <div class="exp-content">
+              <h3>Information Technology Help Desk</h3>
+              <div class="exp-company">Titan Albania &middot; Full-time &middot; Tirana, Albania</div>
+              <p>
+                Providing end-user technical support and managing corporate IT hardware and infrastructure. Handling employee onboarding and offboarding, asset management, CCTV and access control systems, and automating internal workflows with Microsoft Power Platform.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Windows Server</span>
+                <span class="tag">Help Desk</span>
+                <span class="tag">CCTV &amp; Access Controls</span>
+                <span class="tag">Power Platform</span>
+                <span class="tag">GDPR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="exp-item">
+            <div class="exp-date">Jun 2024 — Jun 2025</div>
+            <div class="exp-content">
+              <h3>Information Technology Technician</h3>
+              <div class="exp-company">Atom Computers &middot; Full-time &middot; Tirana, Albania</div>
+              <p>
+                Focused on IT infrastructure projects. Installed and configured Windows and Linux servers, deployed Docker containers, set up NAS storage systems, and managed endpoint security across client systems.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Windows Server</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Docker</span>
+                <span class="tag">NAS</span>
+                <span class="tag">Endpoint Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="exp-item">
+            <div class="exp-date">Oct 2023 — Jun 2024</div>
+            <div class="exp-content">
+              <h3>IT Support Technician</h3>
+              <div class="exp-company">Atom Computers &middot; Part-time &middot; Tirana, Albania</div>
+              <p>
+                Provided on-site and remote technical support for B2B and B2C clients. Troubleshot PC hardware, printers, and network issues. Assembled custom PCs to match specific client specifications.
+              </p>
+              <div class="tag-row">
+                <span class="tag">B2B &amp; B2C Support</span>
+                <span class="tag">PC Assembly</span>
+                <span class="tag">Hardware Diagnostics</span>
+                <span class="tag">Printers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="exp-item">
+            <div class="exp-date">Education</div>
+            <div class="exp-content">
+              <h3>B.Sc. in Information Technology</h3>
+              <div class="exp-company">Epoka University &middot; Tirana, Albania</div>
+              <p>
+                Coursework covering Computer Networks, Operating Systems, Database Management, and Software Engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-sub">Tools, systems, and platforms I work with regularly.</p>
+        </div>
+
+        <div class="skills-columns">
+          <div class="skill-card">
+            <h4>Hardware &amp; Repairs</h4>
+            <ul class="clean-list">
+              <li>Hardware Diagnostics</li>
+              <li>PC Assembly &amp; Custom Builds</li>
+              <li>Thermal Paste Replacement</li>
+              <li>SSD &amp; RAM Upgrades</li>
+              <li>Printer &amp; Peripheral Support</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Operating Systems &amp; Servers</h4>
+            <ul class="clean-list">
+              <li>Windows 10 / 11 &amp; Windows Server</li>
+              <li>Rocky Linux &amp; Ubuntu</li>
+              <li>Active Directory</li>
+              <li>Docker Containerization</li>
+              <li>TrueNAS &amp; ZFS Storage</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Networking &amp; Smart Home</h4>
+            <ul class="clean-list">
+              <li>Routers, Switches &amp; Wi-Fi Access Points</li>
+              <li>VLANs &amp; Subnets</li>
+              <li>VPNs (WireGuard / OpenVPN)</li>
+              <li>Home Assistant &amp; IoT Devices</li>
+              <li>CCTV &amp; Physical Access Controls</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-text">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-sub">
+              Have an IT issue, need office setup assistance, or want to automate your home? Reach out directly.
             </p>
 
-            <div class="contact-cards">
-              <!-- Email Card -->
-              <div class="channel-card" id="emailChannel">
-                <div class="channel-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L1 7"></path>
-                  </svg>
-                </div>
-                <div class="channel-content">
-                  <span class="channel-label">Direct Email</span>
-                  <span class="channel-value" id="emailVal">m@1234.al</span>
-                </div>
-                <button class="copy-icon-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
-                </button>
+            <div class="direct-methods">
+              <div class="method-row">
+                <span class="method-label">Email:</span>
+                <a href="mailto:m@1234.al" class="method-val">m@1234.al</a>
+                <button id="copyBtn" class="copy-pill" title="Copy email">Copy</button>
               </div>
-
-              <!-- LinkedIn Card -->
-              <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer" class="channel-card">
-                <div class="channel-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                  </svg>
-                </div>
-                <div class="channel-content">
-                  <span class="channel-label">LinkedIn Profile</span>
-                  <span class="channel-value">linkedin.com/in/muhamedtereziu</span>
-                </div>
-                <span class="channel-arrow">&rarr;</span>
-              </a>
-
-              <!-- GitHub Card -->
-              <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer" class="channel-card">
-                <div class="channel-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                  </svg>
-                </div>
-                <div class="channel-content">
-                  <span class="channel-label">GitHub Repositories</span>
-                  <span class="channel-value">github.com/MuhamedTereziu</span>
-                </div>
-                <span class="channel-arrow">&rarr;</span>
-              </a>
-
-              <!-- Instagram Card -->
-              <a href="https://www.instagram.com/mterez1u/" target="_blank" rel="noopener noreferrer" class="channel-card">
-                <div class="channel-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </div>
-                <div class="channel-content">
-                  <span class="channel-label">Instagram Profile</span>
-                  <span class="channel-value">@mterez1u</span>
-                </div>
-                <span class="channel-arrow">&rarr;</span>
-              </a>
+              <div class="method-row">
+                <span class="method-label">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer" class="method-val">linkedin.com/in/muhamedtereziu ↗</a>
+              </div>
+              <div class="method-row">
+                <span class="method-label">GitHub:</span>
+                <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer" class="method-val">github.com/MuhamedTereziu ↗</a>
+              </div>
+              <div class="method-row">
+                <span class="method-label">Instagram:</span>
+                <a href="https://www.instagram.com/mterez1u/" target="_blank" rel="noopener noreferrer" class="method-val">@mterez1u ↗</a>
+              </div>
             </div>
           </div>
 
-          <!-- Contact Right: Form -->
-          <div class="contact-form-col">
-            <div class="form-container-card">
-              <div class="form-header">
-                <h3>Submit an IT Inquiry</h3>
-                <p>Fill out the parameters below to dispatch a message directly to my inbox.</p>
-              </div>
-
-              <form id="contactForm" class="inquiry-form" action="mailto:m@1234.al" method="post" enctype="text/plain">
-                <div class="form-group-row">
-                  <div class="form-field">
-                    <label for="formName">Full Name / Company</label>
-                    <input type="text" id="formName" name="name" placeholder="John Doe or Acme Corp" required />
-                  </div>
-                  <div class="form-field">
-                    <label for="formEmail">Email Address</label>
-                    <input type="email" id="formEmail" name="email" placeholder="john@example.com" required />
-                  </div>
-                </div>
-
-                <div class="form-field">
-                  <label for="formService">Primary Service Category</label>
-                  <select id="formService" name="service">
-                    <option value="smart-home">Smart Home Solutions &amp; Automation</option>
-                    <option value="small-biz">Small Business IT Solutions &amp; Office Networks</option>
-                    <option value="storage-nas">Centralized Storage &amp; TrueNAS Setup</option>
-                    <option value="software-maintenance">Software Installation &amp; OS Upkeep</option>
-                    <option value="repair-hardware">IT Hardware Repair &amp; Diagnostics</option>
-                    <option value="custom-workstation">Custom PC Assembly &amp; Workstations</option>
-                    <option value="other">General Technical Consultation</option>
-                  </select>
-                </div>
-
-                <div class="form-field">
-                  <label for="formMessage">Project Details / Requirements</label>
-                  <textarea id="formMessage" name="message" rows="5" placeholder="Describe the systems, devices, or issues you would like addressed..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-submit">
-                  <span>Send Inquiry to m@1234.al</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                  </svg>
-                </button>
-                <span class="form-note">Dispatches directly through your mail client or to m@1234.al.</span>
-              </form>
+          <form class="contact-form" action="mailto:m@1234.al" method="post" enctype="text/plain">
+            <div class="form-item">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
             </div>
-          </div>
 
+            <div class="form-item">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-item">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="smart-home">Smart Home Setup</option>
+                <option value="small-biz">Small Business IT &amp; Networks</option>
+                <option value="repair">Hardware Repair &amp; Diagnostics</option>
+                <option value="software">Software &amp; OS Maintenance</option>
+                <option value="pc-build">Custom PC Build</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="msg">Message</label>
+              <textarea id="msg" name="message" rows="4" placeholder="How can I help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
         </div>
-
       </div>
     </section>
   </main>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">
-          <img src="assets/logo_diamond_only.png" alt="Logo" class="footer-logo" />
-          <span class="footer-name">MUHAMED TEREZIU</span>
-        </div>
-        <p class="footer-desc">
-          IT Systems &amp; Infrastructure Specialist &middot; Titan Albania &middot; Tirana, Albania
-        </p>
-      </div>
-
-      <div class="footer-nav">
-        <a href="#hero">Top</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Arsenal</a>
-        <a href="https://www.linkedin.com/in/muhamedtereziu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/MuhamedTereziu" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-
-      <div class="footer-bottom">
-        <span>&copy; 2026 Muhamed Tereziu. Node: <a href="https://1234.al" target="_blank">1234.al</a> &middot; Built for high performance &amp; zero bloat.</span>
+    <div class="container footer-content">
+      <span>&copy; 2026 Muhamed Tereziu &middot; <a href="https://1234.al">1234.al</a></span>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== SPECIFICATIONS DETAIL MODAL ==================== -->
-  <div class="modal-backdrop" id="specModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <!-- Simple Detail Modal -->
+  <div class="modal" id="detailModal">
     <div class="modal-card">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
-      <div class="modal-inner" id="modalContentSlot">
-        <!-- Injected via JavaScript -->
-      </div>
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
     </div>
   </div>
 
-  <!-- Toast Alert -->
-  <div class="toast" id="toastAlert">Copied to clipboard</div>
+  <div class="toast" id="toast">Copied to clipboard</div>
 
   <script src="./script.js"></script>
 </body>
