@@ -77,32 +77,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const serviceData = {
     "modal-smarthome": {
       title: "Smart Home Automation",
-      image: "assets/card_smarthome.jpg",
+      image: "assets/card_smarthome_v2.jpg",
       desc: "Complete planning and installation of smart home systems. I connect and configure Home Assistant, Apple Home, and Google Home to unify lighting, thermostats, cameras, and sensors into a single local dashboard. Each setup includes isolated Wi-Fi subnets for IoT devices to ensure reliability and network security."
     },
     "modal-smallbiz": {
       title: "Small Business IT",
-      image: "assets/card_smallbiz.jpg",
+      image: "assets/card_smallbiz_v2.jpg",
       desc: "End-to-end office technology setup for businesses, clinics, and workspaces. Services include multi-AP Wi-Fi installation, router and switch configuration, TrueNAS storage systems, automated daily data backups, and employee workstation deployment."
     },
     "modal-software": {
       title: "Software & OS Maintenance",
-      image: "assets/card_software.jpg",
+      image: "assets/card_software_v2.jpg",
       desc: "Clean installations and maintenance for Windows and Linux systems (Rocky Linux, Ubuntu, Debian). Includes driver updates, antivirus and endpoint security setup, patch management, and fast remote troubleshooting."
     },
     "modal-repair": {
       title: "Hardware Diagnostics & Repairs",
-      image: "assets/card_repair.jpg",
+      image: "assets/card_repair_v2.jpg",
       desc: "Troubleshooting desktops and laptops for hardware faults, boot issues, and overheating. Includes physical cleaning, thermal paste replacement, high-speed SSD and RAM upgrades, power supply replacement, and data recovery."
     },
     "modal-network": {
       title: "Network Setup & Security",
-      image: "assets/card_network.jpg",
+      image: "assets/card_network_v2.jpg",
       desc: "Setup and configuration of managed switches, commercial routers, and access points. Services include VLAN segmentation to isolate guest and IoT traffic, firewall rules, and VPN setup (WireGuard / OpenVPN) for secure remote access."
     },
     "modal-assembly": {
       title: "Custom PC Builds",
-      image: "assets/card_pcbuild.jpg",
+      image: "assets/card_pcbuild_v2.jpg",
       desc: "Assembling custom desktop PCs tailored to specific budgets and requirements (workstations, development, creative tasks, or gaming). Includes component compatibility checks, airflow tuning, clean cable routing, BIOS setup, and multi-hour stress testing."
     }
   };
